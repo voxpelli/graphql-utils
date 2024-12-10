@@ -65,7 +65,8 @@
     "npm-run-all2": "^7.0.1",
     "sql-template-tag": "^5.2.1",
     "type-coverage": "^2.29.7",
-    "typescript": "~5.7.2"
+    "typescript": "~5.7.2",
+    "validate-conventional-commit": "^1.0.4"
   },
   "peerDependencies": {
     "@graphql-codegen/cli": "^5.0.2",
