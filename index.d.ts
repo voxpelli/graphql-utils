@@ -26,6 +26,10 @@ export type {
 } from './lib/pagination-types.d.ts';
 
 export type {
+  CustomResolver,
+} from './lib/resolver-types.d.ts';
+
+export type {
   Shallowing,
 } from './lib/shallowing-types.d.ts';
 

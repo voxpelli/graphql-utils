@@ -36,17 +36,76 @@ My personal helpers and types for GraphQL
 
 ## Types
 
-### [Loaders types](./lib/loaders-types.js)
+### [Loaders types](./lib/loaders-types.d.ts)
 
 * `Loaders`
 * `Schema`
 
-### [Mercurius types](./lib/mercurius-types.js)
+### [Mercurius types](./lib/mercurius-types.d.ts)
 
 * `CustomContext`
 * `LoaderWithReturn`
 
+### [Resolver types](./lib/resolver-types.d.ts)
 
-### [Shallowing types](./lib/shallowing-types.js)
+* `CustomResolver`
+
+### [Shallowing types](./lib/shallowing-types.d.ts)
 
 * `Shallowing`
+
+## GraphQL Codegen
+
+These helpers are used with something like this config for https://the-guild.dev/graphql/codegen:
+
+```yml
+schema: './lib/graphql/schema.graphql'
+# documents:
+#   - './lib/queries/**/*.{graphql,js}'
+#   - './views/**/*.{graphql,js}'
+extensions:
+  languageService:
+    useSchemaFileDefinitions: true
+  codegen:
+    overwrite: true
+    emitLegacyCommonJSImports: false
+    config:
+      exportFragmentSpreadSubTypes: true
+      skipTypename: true
+      avoidOptionals: true
+      contextType: '@voxpelli/graphql-utils#CustomContext'
+      customResolverFn: '@voxpelli/graphql-utils#CustomResolver'
+      enumsAsTypes: true
+      immutableTypes: true
+      noSchemaStitching: true
+      wrapFieldDefinitions: false
+      resolverTypeWrapperSignature: T
+      useTypeImports: true
+      # TODO: What is this?
+      showUnusedMappers: true
+      scalars:
+        DateTime: Date
+        EmailAddress: string
+        JSONObject: JsonObject
+        NonEmptyString: string
+        UUID: string
+    generates:
+      lib/graphql/schema.d.ts:
+        plugins:
+          - add:
+              content: '// Automatically generated, do not change!'
+          - add:
+              content: "import type { JsonObject } from 'type-fest';"
+          - typescript
+          - typescript-resolvers
+      lib/graphql/:
+        preset: near-operation-file
+        presetConfig:
+          extension: -generated.d.ts
+          baseTypesPath: schema.js
+        plugins:
+          - add:
+              content: '// Automatically generated, do not change!'
+          - typescript-operations:
+              inlineFragmentTypes: 'combine'
+```
