@@ -1,60 +1,52 @@
-# Node Module Template
+# @voxpelli/graphql-utils
 
-A GitHub template repo for node modules
+My personal helpers and types for GraphQL
 
-<!--
-[![npm version](https://img.shields.io/npm/v/@voxpelli/node-module-template.svg?style=flat)](https://www.npmjs.com/package/@voxpelli/node-module-template)
-[![npm downloads](https://img.shields.io/npm/dm/@voxpelli/node-module-template.svg?style=flat)](https://www.npmjs.com/package/@voxpelli/node-module-template)
--->
+[![npm version](https://img.shields.io/npm/v/@voxpelli/graphql-utils.svg?style=flat)](https://www.npmjs.com/package/@voxpelli/graphql-utils)
+[![npm downloads](https://img.shields.io/npm/dm/@voxpelli/graphql-utils.svg?style=flat)](https://www.npmjs.com/package/@voxpelli/graphql-utils)
 [![neostandard javascript style](https://img.shields.io/badge/code_style-neostandard-7fffff?style=flat&labelColor=ff80ff)](https://github.com/neostandard/neostandard)
 [![Module type: ESM](https://img.shields.io/badge/module%20type-esm-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
 [![Types in JS](https://img.shields.io/badge/types_in_js-yes-brightgreen)](https://github.com/voxpelli/types-in-js)
 [![Follow @voxpelli@mastodon.social](https://img.shields.io/mastodon/follow/109247025527949675?domain=https%3A%2F%2Fmastodon.social&style=social)](https://mastodon.social/@voxpelli)
 
-## Usage
+## Helpers
 
-```javascript
-import { something } from '@voxpelli/node-module-template';
+### [Loader helpers](./lib/loader-helpers.js)
 
-// Use that something
-```
+* `oneToManyLoader()`
+* `oneToOneLoader()`
 
-## API
+#### Loader helper types
 
-### something()
+* `OneToManyLoader`
+* `OneToOneLoader`
 
-Takes a value (`input`), does something configured by the config (`configParam`) and returns the processed value asyncly(`output`)
+### [Pagination helpers](./lib/pagination-helpers.js)
 
-#### Syntax
+* `generatePaginatedResponse()`
+* `paginatedLoader()`
+* `paginationArgsToSql()`
 
-```ts
-something(input, [options]) => Promise<true>
-```
+#### Pagination helper types
 
-#### Arguments
+* `PageInfo`
+* `PaginatedLoader`
+* `PaginationArgs`
+* `PaginationResponse`
 
-* `input` – _`string`_ – the input of the method
-* `options` – _[`SomethingOptions`](#somethingoptions)_ – optional options
+## Types
 
-#### SomethingOptions
+### [Loaders types](./lib/loaders-types.js)
 
-* `maxAge` – _`number`_ – the maximum age of latest release to include
-* `minDownloadsLastMonth = 400` – _`number`_ – the minimum amount of downloads needed to be returned
-* `skipPkg` – _`boolean`_ – when set skips resolving `package.json`
+* `Loaders`
+* `Schema`
 
-#### Returns
+### [Mercurius types](./lib/mercurius-types.js)
 
-A `Promise` that resolves to `true`
+* `CustomContext`
+* `LoaderWithReturn`
 
-## Used by
 
-* [`example`](https://example.com/) – used by this one to do X and Y
+### [Shallowing types](./lib/shallowing-types.js)
 
-## Similar modules
-
-* [`example`](https://example.com/) – is similar in this way
-
-## See also
-
-* [Announcement blog post](#)
-* [Announcement tweet](#)
+* `Shallowing`

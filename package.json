@@ -1,7 +1,7 @@
 {
   "name": "@voxpelli/graphql-utils",
   "version": "0.0.0",
-  "description": "A GitHub template repo for node modules",
+  "description": "My personal helpers and types for GraphQL",
   "homepage": "http://github.com/voxpelli/graphql-utils",
   "repository": {
     "type": "git",

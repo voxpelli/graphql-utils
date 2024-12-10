@@ -3,7 +3,7 @@
 export type {
   OneToManyLoader,
   OneToOneLoader,
-} from './lib/helpers.js';
+} from './lib/loader-helpers.js';
 
 export type {
   Loaders,
@@ -34,7 +34,7 @@ export type {
 export {
   oneToManyLoader,
   oneToOneLoader,
-} from './lib/helpers.js';
+} from './lib/loader-helpers.js';
 
 export {
   generatePaginatedResponse,

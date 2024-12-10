@@ -1,7 +1,7 @@
 export {
   oneToManyLoader,
   oneToOneLoader,
-} from './lib/helpers.js';
+} from './lib/loader-helpers.js';
 
 export {
   generatePaginatedResponse,
