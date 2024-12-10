@@ -8,6 +8,9 @@
     "test/**/*",
   ],
   "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "types": ["node", "mocha"]
+
   }
 }

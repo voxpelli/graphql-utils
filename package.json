@@ -1,11 +1,11 @@
 {
-  "name": "@voxpelli/node-module-template",
+  "name": "@voxpelli/graphql-utils",
   "version": "0.0.0",
   "description": "A GitHub template repo for node modules",
-  "homepage": "http://github.com/voxpelli/node-module-template",
+  "homepage": "http://github.com/voxpelli/graphql-utils",
   "repository": {
     "type": "git",
-    "url": "git://github.com/voxpelli/node-module-template.git"
+    "url": "git://github.com/voxpelli/graphql-utils.git"
   },
   "keywords": [],
   "author": "Pelle Wessman <pelle@kodfabrik.se> (http://kodfabrik.se/)",
@@ -43,21 +43,39 @@
     "test-ci": "run-s test:*",
     "test": "run-s check test:*"
   },
+  "dependencies": {
+    "type-fest": "^4.30.0"
+  },
   "devDependencies": {
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
     "@types/node": "^20.17.9",
+    "@types/ws": "^8.5.13",
     "@voxpelli/eslint-config": "^22.2.0",
     "@voxpelli/tsconfig": "^15.1.0",
     "c8": "^10.1.2",
     "chai": "^4.5.0",
     "eslint": "^9.16.0",
+    "fastify": "^5.1.0",
     "husky": "^9.1.7",
     "installed-check": "^9.3.0",
     "knip": "^5.38.4",
+    "mercurius": "^15.1.0",
     "mocha": "^10.8.2",
     "npm-run-all2": "^7.0.1",
+    "sql-template-tag": "^5.2.1",
     "type-coverage": "^2.29.7",
     "typescript": "~5.7.2"
+  },
+  "peerDependencies": {
+    "@graphql-codegen/cli": "^5.0.2",
+    "fastify": "^5.1.0",
+    "mercurius": "^15.1.0",
+    "sql-template-tag": "^5.2.1"
+  },
+  "peerDependenciesMeta": {
+    "@graphql-codegen/cli": {
+      "optional": true
+    }
   }
 }
