@@ -62,7 +62,7 @@
     "installed-check": "^9.3.0",
     "knip": "^5.38.4",
     "mercurius": "^15.1.0",
-    "mocha": "^10.8.2",
+    "mocha": "^11.0.1",
     "npm-run-all2": "^7.0.1",
     "sql-template-tag": "^5.2.1",
     "type-coverage": "^2.29.7",
