@@ -70,10 +70,10 @@
     "validate-conventional-commit": "^1.0.4"
   },
   "peerDependencies": {
-    "@graphql-codegen/cli": "^5.0.2",
-    "fastify": "^5.1.0",
-    "graphql": "^16.9.0",
-    "mercurius": "^15.1.0",
+    "@graphql-codegen/cli": "^5.0.4",
+    "fastify": "^5.2.1",
+    "graphql": "^16.10.0",
+    "mercurius": "^16.0.1",
     "sql-template-tag": "^5.2.1"
   },
   "peerDependenciesMeta": {
