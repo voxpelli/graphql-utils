@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.3.1](https://github.com/voxpelli/graphql-utils/compare/v0.3.0...v0.3.1) (2025-02-13)
+
+
+### 🌟 Features
+
+* add `targetField` option to `oneToOneLoader` ([25491c2](https://github.com/voxpelli/graphql-utils/commit/25491c26c409f3dbef7a26429863e37fc2e043fc))
+
+
+### 🩹 Fixes
+
+* no need for `id` in `oneToOneLoader` target ([e7ad821](https://github.com/voxpelli/graphql-utils/commit/e7ad8211a4a305be18463743e08666dacbe80bdc))
+
+
+### 🧹 Chores
+
+* rename a utils ([b180416](https://github.com/voxpelli/graphql-utils/commit/b1804163e0d702c7b1a063a7b176999ff7aa51c1))
+
 ## [0.3.0](https://github.com/voxpelli/graphql-utils/compare/v0.2.0...v0.3.0) (2025-02-10)
 
 
