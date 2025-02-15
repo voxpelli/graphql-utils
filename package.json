@@ -47,7 +47,7 @@
     "type-fest": "^4.30.0"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^5.0.4",
+    "@graphql-codegen/cli": "^5.0.5",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
     "@types/node": "^20.17.17",
