@@ -66,9 +66,9 @@ type EntityLoaders<
     ? ComplexKeys<S['ResolversParentTypes'][E]> extends infer U
       ? {
           [P in keyof U]: EntityPropertyLoader<
-          S['ResolversParentTypes'][E],
-            U[P],
-            P extends keyof S['Resolvers'][E] ? S['Resolvers'][E][P] : never
+            S['ResolversParentTypes'][E],
+              U[P],
+              P extends keyof S['Resolvers'][E] ? S['Resolvers'][E][P] : never
           >
         }
       : never
