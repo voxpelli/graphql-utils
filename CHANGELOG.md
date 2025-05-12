@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/voxpelli/graphql-utils/compare/v0.3.1...v0.3.2) (2025-05-12)
+
+
+### 🧹 Chores
+
+* fix some whitespace ([d2aba9b](https://github.com/voxpelli/graphql-utils/commit/d2aba9bdf9ee051dbb62d4cca3642b5c3479625f))
+
 ## [0.3.1](https://github.com/voxpelli/graphql-utils/compare/v0.3.0...v0.3.1) (2025-02-13)
 
 
